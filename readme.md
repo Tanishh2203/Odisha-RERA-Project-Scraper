@@ -77,13 +77,15 @@ GST No : 21ABCDE1234F1Z5
 ### Project Structure
 
 ```
-enhanced_odisha_rera_scraper/
-├── enhanced_odisha_rera_scraper.py
+Odisha rera Web/
+├── scrap.py
 ├── README.md
 ├── requirements.txt
 ├── enhanced_odisha_rera_top6_projects.csv
 ├── enhanced_odisha_rera_top6_projects.json
 ├── enhanced_odisha_rera_top6_projects.html
+├── output.png
+
 ```
 
 #### How It Works
