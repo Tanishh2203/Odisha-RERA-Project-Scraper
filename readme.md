@@ -44,15 +44,15 @@ Alternatively, install the packages individually:
 
 #### Usage
 
-**Run the Scraper:**Execute the main script to start scraping:
+Run the Scraper:*Execute the main script to start scraping:
 `python enhanced_odisha_rera_scraper.py`
 
 - By default, the scraper runs in non-headless mode (browser visible).
 - To run in headless mode (no browser UI), modify the EnhancedOdishaRERAProjectScraper initialization in the main() function:
   `scraper = EnhancedOdishaRERAProjectScraper(headless=True)`
 
-**
-Output:**
+
+Output:
 
 - The scraper will process the top 6 projects and display their details in the console.
 - Output files will be generated in the project directory:
@@ -61,17 +61,18 @@ Output:**
 - _enhanced_odisha_rera_top6_projects.html:_ Styled HTML table with project data.
 - The HTML file can be opened in a web browser to view a formatted table of the scraped data.
 
-**Example Output:**The console will display a summary of each project's details, such as:
-🏗️ PROJECT 1:
+Example Output:The console will display a summary of each project's details, such as:
+**PROJECT 1:**
 
----
 
+```
 Project URL : https://rera.odisha.gov.in/projects/details/...
 RERA Regd. No : RP/19/2023/12345
 Project Name : Sample Project
 Promoter Name : Sample Developer
 Promoter Address : 123, Sample Street, Bhubaneswar, Odisha
 GST No : 21ABCDE1234F1Z5
+```
 
 ### Project Structure
 
@@ -99,8 +100,8 @@ enhanced_odisha_rera_scraper/
 - Clicks the "View Details" button for each project to access detailed information.
 - Extracts additional details (promoter address, GST number) from the project details page, with retries for dynamic content.
 
-**
-Data Handling:**
+
+**Data Handling:**
 
 - Uses regular expressions to reliably extract RERA numbers (e.g., RP/19/2023/12345) and GST numbers (e.g., 21ABCDE1234F1Z5).
 - Stores data in a structured format and saves it as CSV, JSON, and HTML files.
