@@ -1,4 +1,4 @@
-# Enhanced Odisha RERA Project Scraper
+# Odisha RERA Project Scraper
 
 #### Overview
 
